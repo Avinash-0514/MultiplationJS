@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image:radial-gradient(circle, rgba(20,21,214,1) 15%, rgba(163,18,215,1) 49%, rgba(3,249,241,1) 85%);
+        background-size: 500% 500%;
+        animation: colorchange 5s ease infinite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+         
+       }
+
+       @keyframes colorchange {
+
+        0%{
+            background-position: 0%;
+        }
+        50%{
+            background-position: 100%;
+        }
+        100%{
+            background-position: 0%;
+        }
+        
+    }
+    header{
+        font-size: 50px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: white;
+    line-height: 150px
+    
+    
+    }
+        
+    .table{
+        height: 300px;
+        width: 600px;
+        justify-content: center;
+display: flex;
+
+
+font-size: 30px;
+       
+    }
+    #sec1,#sec2{
+        height: 50px;
+        width: 300px;           
+    }
+    input{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width: 300;
+        height: 50px;
+        }
+button {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
